@@ -1,0 +1,1 @@
+function get(n){return fetch(n,{method:"get"})}function getJSON(n){return get(n).then(function(n){return n.json()})}function outputJSON(){getJSON("https://s3-us-west-2.amazonaws.com/s.cdpn.io/140/dandenney.json").then(function(n){document.querySelector(".json-output").innerHTML="<pre>"+JSON.stringify(n)+"</pre>",console.log(n)}).catch(function(n){console.log(n)})}outputJSON();
