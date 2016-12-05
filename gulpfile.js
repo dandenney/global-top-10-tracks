@@ -37,7 +37,7 @@ var uglify        = require('gulp-uglify');
 //   Primary Task
 // -------------------------------------
 
-gulp.task('default', ['copy-html', 'copy-images', 'styles', 'scripts'], function() {
+gulp.task('default', ['copy-html', 'copy-data', 'copy-images', 'styles', 'scripts'], function() {
 	gulp.watch('src/styles/**/*.sass', ['styles']);
 	gulp.watch('src/js/**/*.js', ['scripts']);
 	gulp.watch('src/*.html', ['copy-html']);
@@ -56,6 +56,7 @@ gulp.task('default', ['copy-html', 'copy-images', 'styles', 'scripts'], function
 
 gulp.task('dist', [
 	'copy-html',
+	'copy-data',
 	'copy-images',
 	'styles',
 	'scripts',
@@ -97,6 +98,13 @@ gulp.task('styles', function() {
 gulp.task('copy-html', function() {
 	gulp.src('src/*.html')
 		.pipe(gulp.dest('./dist'));
+});
+
+// ----- Data ----- //
+
+gulp.task('copy-data', function() {
+	gulp.src('src/data/*')
+		.pipe(gulp.dest('dist/data'));
 });
 
 // ----- Images ----- //

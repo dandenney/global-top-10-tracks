@@ -43,9 +43,9 @@ function getJSON(url) {
 // Output JSON into the dom
 function outputJSON() {
 
-  getJSON('https://s3-us-west-2.amazonaws.com/s.cdpn.io/140/dandenney.json')
+  getJSON('data/global-top-10-tracks.json')
   .then(function(response) {
-    document.querySelector('.json-output').innerHTML = '<pre>' + JSON.stringify(response) + '</pre>'
+    document.querySelector('.json-output').innerHTML = '<pre>' + JSON.stringify(response, null, 2) + '</pre>'
     console.log(response);
   })
   .catch(function(error) {
