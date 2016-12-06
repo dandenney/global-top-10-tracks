@@ -31,7 +31,6 @@ var sass          = require('gulp-sass');
 var autoprefixer  = require('gulp-autoprefixer');
 var browserSync   = require('browser-sync').create();
 var concat        = require('gulp-concat');
-var uglify        = require('gulp-uglify');
 
 // -------------------------------------
 //   Primary Task
@@ -68,14 +67,12 @@ gulp.task('dist', [
 gulp.task('scripts', function() {
 	gulp.src('src/js/**/*.js')
 		.pipe(concat('app.js'))
-		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('scripts-dist', function() {
 	gulp.src('src/js/**/*.js')
 		.pipe(concat('app.js'))
-		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
 });
 
