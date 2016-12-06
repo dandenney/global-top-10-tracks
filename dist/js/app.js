@@ -46,14 +46,14 @@ function outputJSON() {
   getJSON('data/global-top-10-tracks.json')
   .then(function(response) {
 
-    // Loop over the JSON and output values
-    // I'd love to move this out of here, but I'll need to figure out passing response.tracks in
-    $.each(response.tracks, function(i, track) {
+    const tracks = response.tracks;
+
+    tracks.forEach(function(track, i) {
 
       // Set variables from JSON keys
-      const ID = response.tracks[i].trackID;
-      const name = response.tracks[i].trackName;
-      const artist = response.tracks[i].trackArtist;
+      const ID = track.trackID;
+      const name = track.trackName;
+      const artist = track.trackArtist;
 
       // Output from the JSON keys using template strings, woohoo!
       document.querySelector('#all').innerHTML += `
@@ -64,7 +64,7 @@ function outputJSON() {
         </article>
       `;
 
-    })
+    });
 
     let trackLinks = document.querySelectorAll('.track-link');
 
