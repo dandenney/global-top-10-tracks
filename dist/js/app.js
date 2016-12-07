@@ -80,12 +80,10 @@ function outputJSON() {
 
         console.log(index);
 
-        document.querySelector('#track').innerHTML = `
-          <article>
-            <img src='images/${ID}.jpeg' />
-            <h1>${name}</h1>
-            <h2>${artist}</h2>
-          </article>
+        document.querySelector('#track-container').innerHTML = `
+          <img src='images/${ID}.jpeg' />
+          <h1>${name}</h1>
+          <h2>${artist}</h2>
         `;
 
       });
