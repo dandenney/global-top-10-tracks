@@ -71,20 +71,48 @@ function outputJSON() {
     trackLinks.forEach(function(trackLink) {
       trackLink.addEventListener('click', function() {
 
+        document.querySelector('#track-positions').innerHTML = '';
+        document.querySelector('#track-streams').innerHTML = '';
+
         // Get the track's object index from the data attribute
-        let index = this.getAttribute('data-track');
-        let track = response.tracks[index];
-        let name = response.tracks[index].trackName;
-        let artist = response.tracks[index].trackArtist;
-        let ID = response.tracks[index].trackID;
+        const index = this.getAttribute('data-track');
+        const track = response.tracks[index];
+        const name = response.tracks[index].trackName;
+        const artist = response.tracks[index].trackArtist;
+        const ID = response.tracks[index].trackID;
+        const trackPositions = response.tracks[index].trackPositions;
+        const trackStreams = response.tracks[index].trackStreams;
 
-        console.log(index);
-
-        document.querySelector('#track-container').innerHTML = `
+        // Output track meta information
+        document.querySelector('#track-meta').innerHTML = `
           <img src='images/${ID}.jpeg' />
           <h1>${name}</h1>
           <h2>${artist}</h2>
         `;
+
+        // Output track positions
+        trackPositions.forEach(function(trackPosition) {
+
+          const date = trackPosition.positionDate;
+          const rank = trackPosition.positionRank;
+
+          document.querySelector('#track-positions').innerHTML += `
+            <li>${date}: ${rank}</li>
+          `;
+
+        });
+
+        // Output track positions
+        trackStreams.forEach(function(trackStream) {
+
+          const date = trackStream.streamDate;
+          const count = trackStream.streamCount;
+
+          document.querySelector('#track-streams').innerHTML += `
+            <li>${date}: ${count}</li>
+          `;
+
+        });
 
       });
     });
