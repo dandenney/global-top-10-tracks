@@ -94,7 +94,6 @@ function outputJSON() {
 
         // Get the track's object index from the data attribute
         const index = this.getAttribute('data-track');
-        const track = response.tracks[index];
         const name = response.tracks[index].trackName;
         const artist = response.tracks[index].trackArtist;
         const ID = response.tracks[index].trackID;
