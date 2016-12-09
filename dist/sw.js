@@ -1,9 +1,12 @@
 var CACHE_NAME = 'global-cache-v1';
 var urlsToCache = [
   '/',
-  '/styles/app.css',
+  '/data/global-top-10-tracks.json',
+  '/images/6fujklziTHa8uoM5OQSfIo.jpeg',
+  '/images/7MXVkk9YMctZqd1Srtv4MB.jpeg',
   '/js/app.js',
-  '/data/global-top-10-tracks.json'
+  '/styles/app.css',
+  '/index.html',
 ];
 
 self.addEventListener('install', function(event) {
