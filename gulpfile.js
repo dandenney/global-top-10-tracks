@@ -36,7 +36,7 @@ var concat        = require('gulp-concat');
 //   Primary Task
 // -------------------------------------
 
-gulp.task('default', ['copy-root', 'copy-html', 'copy-data', 'copy-images', 'styles', 'scripts'], function() {
+gulp.task('default', ['copy-root', 'copy-toolbox', 'copy-html', 'copy-data', 'copy-images', 'styles', 'scripts'], function() {
 	gulp.watch('src/sw.js', ['copy-sw']);
 	gulp.watch('src/styles/**/*.sass', ['styles']);
 	gulp.watch('src/js/**/*.js', ['scripts']);
@@ -105,6 +105,13 @@ gulp.task('copy-html', function() {
 gulp.task('copy-root', function() {
 	gulp.src('src/*')
 		.pipe(gulp.dest('./dist'));
+});
+
+// ----- SW Toolbox ----- //
+
+gulp.task('copy-toolbox', function() {
+	gulp.src('src/sw-toolbox/*')
+		.pipe(gulp.dest('./dist/sw-toolbox'));
 });
 
 // ----- Service Worker ----- //
