@@ -36,7 +36,8 @@ var concat        = require('gulp-concat');
 //   Primary Task
 // -------------------------------------
 
-gulp.task('default', ['copy-html', 'copy-data', 'copy-images', 'styles', 'scripts'], function() {
+gulp.task('default', ['copy-root', 'copy-html', 'copy-data', 'copy-images', 'styles', 'scripts'], function() {
+	gulp.watch('src/sw.js', ['copy-sw']);
 	gulp.watch('src/styles/**/*.sass', ['styles']);
 	gulp.watch('src/js/**/*.js', ['scripts']);
 	gulp.watch('src/*.html', ['copy-html']);
@@ -54,6 +55,8 @@ gulp.task('default', ['copy-html', 'copy-data', 'copy-images', 'styles', 'script
 // ----- Dist ----- //
 
 gulp.task('dist', [
+	'copy-root',
+	'copy-sw',
 	'copy-html',
 	'copy-data',
 	'copy-images',
@@ -94,6 +97,20 @@ gulp.task('styles', function() {
 
 gulp.task('copy-html', function() {
 	gulp.src('src/*.html')
+		.pipe(gulp.dest('./dist'));
+});
+
+// ----- Root files ----- //
+
+gulp.task('copy-root', function() {
+	gulp.src('src/*')
+		.pipe(gulp.dest('./dist'));
+});
+
+// ----- Service Worker ----- //
+
+gulp.task('copy-sw', function() {
+	gulp.src('src/sw.js')
 		.pipe(gulp.dest('./dist'));
 });
 
