@@ -1,0 +1,21 @@
+// *************************************
+//
+//   Card
+//   -> Individual style containers
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .sb-card
+//   / ...
+//
+// *************************************
+
+.sb-card {
+  background-color: $white;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  padding: $space;
+  position: relative;
+}

@@ -1,0 +1,22 @@
+// *************************************
+//
+//   Layout
+//   -> Single-page functionality
+//
+// *************************************
+
+main > * {
+  display: none;
+}
+
+main > *:last-child {
+  display: block;
+}
+
+main > *:target {
+  display: block;
+}
+
+main > *:target ~ * {
+  display: none;
+}

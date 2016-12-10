@@ -38,7 +38,7 @@ var concat        = require('gulp-concat');
 
 gulp.task('default', ['copy-root', 'copy-toolbox', 'copy-html', 'copy-data', 'copy-images', 'styles', 'scripts'], function() {
 	gulp.watch('src/sw.js', ['copy-sw']);
-	gulp.watch('src/styles/**/*.sass', ['styles']);
+	gulp.watch('src/styles/**/*.scss', ['styles']);
 	gulp.watch('src/js/**/*.js', ['scripts']);
 	gulp.watch('src/*.html', ['copy-html']);
 	gulp.watch('src/*.html').on('change', browserSync.reload);
@@ -82,7 +82,7 @@ gulp.task('scripts-dist', function() {
 // ----- styles ----- //
 
 gulp.task('styles', function() {
-	gulp.src('src/styles/**/*.sass')
+	gulp.src('src/styles/**/*.scss')
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}).on('error', sass.logError))
