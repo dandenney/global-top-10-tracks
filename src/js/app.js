@@ -52,7 +52,9 @@
   function outputJSON() {
     getJSON('data/global-top-10-tracks.json')
     .then(function (response) {
+      // Variables
       const tracks = response.tracks;
+      // Loop over tracks
       tracks.forEach(function (track, i) {
         // Set variables from JSON keys
         const ID = track.trackID;
@@ -67,12 +69,15 @@
           </article>
         `;
       });
+      // Variables
       const trackLinks = document.querySelectorAll('.track-link');
+      // Loop over track data
       trackLinks.forEach(function (trackLink) {
+        // Listen for clicks to tracks
         trackLink.addEventListener('click', function () {
           document.querySelector('#track-positions').innerHTML = '';
           document.querySelector('#track-streams').innerHTML = '';
-          // Get the track's object index from the data attribute
+          // Variables
           const index = this.getAttribute('data-track');
           const name = response.tracks[index].trackName;
           const artist = response.tracks[index].trackArtist;
