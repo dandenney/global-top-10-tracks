@@ -44,18 +44,18 @@
   }
   // Get JSON from a URL
   function getJSON(url) {
-    return get(url).then(function (response) {
+    return get(url).then(response => {
       return response.json();
     });
   }
   // Output JSON into the dom
   function outputJSON() {
     getJSON('data/global-top-10-tracks.json')
-    .then(function (response) {
+    .then(response => {
       // Variables
       const tracks = response.tracks;
       // Loop over tracks
-      tracks.forEach(function (track, i) {
+      tracks.forEach((track, i) => {
         // Set variables from JSON keys
         const ID = track.trackID;
         const name = track.trackName;
@@ -72,7 +72,7 @@
       // Variables
       const trackLinks = document.querySelectorAll('.track-link');
       // Loop over track data
-      trackLinks.forEach(function (trackLink) {
+      trackLinks.forEach(trackLink => {
         // Listen for clicks to tracks
         trackLink.addEventListener('click', function () {
           document.querySelector('#track-positions').innerHTML = '';
@@ -91,7 +91,7 @@
             <h2>${artist}</h2>
           `;
           // Output track positions
-          trackPositions.forEach(function (trackPosition) {
+          trackPositions.forEach(trackPosition => {
             const date = trackPosition.positionDate;
             const rank = trackPosition.positionRank;
             document.querySelector('#track-positions').innerHTML += `
@@ -100,7 +100,7 @@
           });
 
           // Output track positions
-          trackStreams.forEach(function (trackStream) {
+          trackStreams.forEach(trackStream => {
             const date = trackStream.streamDate;
             const count = trackStream.streamCount;
             document.querySelector('#track-streams').innerHTML += `
@@ -110,7 +110,7 @@
         });
       });
     })
-    .catch(function (error) {
+    .catch(error => {
       console.log(error);
     });
   }
