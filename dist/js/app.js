@@ -66,11 +66,14 @@
       const name = track.trackName;
       const artist = track.trackArtist;
       // Output from the JSON keys using template strings, woohoo!
-      document.querySelector('#all').innerHTML += `
-        <article>
-          <img src="images/${ID}.jpeg" />
-          <h3><a class='track-link' data-track='${i}' href='#track'>${name}</a></h3>
-          <h4>${artist}</h4>
+      document.querySelector('#tracks-container').innerHTML += `
+        <article class='tracks-track'>
+          <a class='tracks-link' data-track='${i}' href='#track'>
+            <img class='tracks-img' src='images/${ID}.jpeg' />
+            <h4 class='tracks-title'>${name}</h4>
+            <h5 class='tracks-artist'>${artist}</h5>
+            <p class='tracks-lastRanked'><!-- TODO: Output last item in dates array -->12/2/16</p>
+          </a>
         </article>
       `;
     });
@@ -80,7 +83,7 @@
     // -------------------------------------
 
     // Variables
-    const trackLinks = document.querySelectorAll('.track-link');
+    const trackLinks = document.querySelectorAll('.tracks-link');
 
     // Loop over track data
     trackLinks.forEach(trackLink => {

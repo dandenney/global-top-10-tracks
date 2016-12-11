@@ -17,6 +17,8 @@ $black: #000000;
 
 // Gray
 
+$boulder: #7a7a7a;
+$mineShaft: #222222;
 $porcelain: #ecf0f1;
 $slate: #444;
 
@@ -28,6 +30,24 @@ $plum-t1: tint($plum, 40%);
 // White
 
 $white: #fff;
+
+// -------------------------------------
+//   Fonts
+// -------------------------------------
+
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../fonts/PTS55F-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pt_sansbold';
+  src: url('../fonts/PTS75F-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 // -------------------------------------
 //   Base
@@ -62,11 +82,11 @@ $space-4: $space * 4;
 
 // ----- Family ----- //
 
-$fontFamily: sans-serif;
+$fontFamily: 'pt_sansregular', sans-serif;
 
 // Headings
 
-$heading-fontFamily: sans-serif;
+$heading-fontFamily: 'pt_sansbold', sans-serif;
 
 // ----- Line Height ----- //
 
@@ -85,4 +105,5 @@ $fontSize-xl: 24px;
 $heading-fontSize-h1: 32px;
 $heading-fontSize-h2: 24px;
 $heading-fontSize-h3: 20px;
-$heading-fontSize-h4: 18px;
+$heading-fontSize-h4: 20px;
+$heading-fontSize-h5: 14px;

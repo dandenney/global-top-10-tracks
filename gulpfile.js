@@ -36,7 +36,7 @@ var concat        = require('gulp-concat');
 //   Primary Task
 // -------------------------------------
 
-gulp.task('default', ['copy-root', 'copy-toolbox', 'copy-html', 'copy-data', 'copy-images', 'styles', 'scripts'], function() {
+gulp.task('default', ['copy-root', 'copy-toolbox','copy-fonts', 'copy-html', 'copy-data', 'copy-images', 'styles', 'scripts'], function() {
 	gulp.watch('src/sw.js', ['copy-sw']);
 	gulp.watch('src/styles/**/*.scss', ['styles']);
 	gulp.watch('src/js/**/*.js', ['scripts']);
@@ -126,6 +126,13 @@ gulp.task('copy-sw', function() {
 gulp.task('copy-data', function() {
 	gulp.src('src/data/*')
 		.pipe(gulp.dest('dist/data'));
+});
+
+// ----- Fonts ----- //
+
+gulp.task('copy-fonts', function() {
+	gulp.src('src/fonts/*')
+		.pipe(gulp.dest('dist/fonts'));
 });
 
 // ----- Images ----- //

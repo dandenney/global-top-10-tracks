@@ -1,0 +1,57 @@
+// *************************************
+//
+//   Tracks
+//   -> Listing of all tracks
+//
+// *************************************
+
+.tracks-img {
+  display: block;
+  margin-bottom: $space-05;
+  width: 200px;
+}
+
+.tracks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tracks-track {
+  background: $black;
+  border: 1px solid $mineShaft;
+  margin: $space-025;
+  padding: $space-05;
+  transition: transform 0.25s ease-in-out;
+
+  a {
+    color: $white;
+  }
+
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+
+    a {
+      color: $white;
+    }
+
+  }
+
+}
+
+.tracks-title {
+  margin: 0;
+}
+
+.tracks-artist {
+  color: $boulder;
+  font-weight: normal;
+  margin: 0 0 $space-025 0;
+}
+
+.tracks-lastRanked {
+  color: $boulder;
+  font-size: $fontSize-xs;
+  margin-bottom: 0;
+}

@@ -28,7 +28,7 @@ h2, .h2,
 h3, .h3,
 h4, .h4 {
   font-family: $heading-fontFamily;
-  font-weight: 700;
+  font-weight: normal;
   line-height: 1.2;
   margin-bottom: $space-025;
   margin-top: 0;
@@ -50,6 +50,11 @@ h4, .h4 {
   font-size: $heading-fontSize-h4;
 }
 
+h5, .h5 {
+  font-size: $heading-fontSize-h5;
+  font-weight: normal;
+}
+
 // -------------------------------------
 //   Inline Content
 // -------------------------------------
@@ -58,13 +63,12 @@ h4, .h4 {
 
 a {
   border-bottom: $border;
-  color: $plum;
+  color: $white;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    border-bottom-color: $plum;
-    color: $plum-t1;
+    color: rgba($white, 0.8);
   }
 }
 
