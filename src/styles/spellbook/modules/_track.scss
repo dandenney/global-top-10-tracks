@@ -42,4 +42,16 @@
     font-family: $heading-fontFamily;
   }
 
+  + .track-table {
+    margin-left: -5px;
+  }
+
+  + .track-table td {
+    border-left: none;
+  }
+
+  + .track-table th {
+    border-left: none;
+  }
+
 }

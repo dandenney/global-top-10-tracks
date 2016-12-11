@@ -128,7 +128,6 @@
           const count = trackStream.streamCount;
           document.querySelector('#track-streams').innerHTML += `
           <tr>
-            <td>${date}</td>
             <td>${count}</td>
           </tr>
           `;
