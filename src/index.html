@@ -21,25 +21,41 @@
 
       <section id='track'>
 
-        <article id='track-container'>
+        <div class='sb-tac'>
+          <a class='sb-dib sb-mtxl sb-tac' href='#all'>All</a>
+        </div>
 
-          <div id='track-meta'>
+        <article class='track-container' id='track-container'>
+
+          <div class='track-info' id='track-info'>
             <!-- Track meta outputs here -->
           </div>
 
-          <h3>Positions</h3>
-          <ul id='track-positions'>
-            <!-- Track positions outputs here -->
-          </ul>
+          <div class='sb-tac'>
 
-          <h3>Streams</h3>
-          <ul id='track-streams'>
-            <!-- Track steam counts output here -->
-          </ul>
+            <table class='track-table'>
+              <thead>
+                <th>Date</th>
+                <th>Position</th>
+              </thead>
+              <tbody id='track-positions'>
+                <!-- Track positions output here -->
+              </tbody>
+            </table>
+
+            <table class='track-table'>
+              <thead>
+                <th>Date</th>
+                <th>Streams</th>
+              </thead>
+              <tbody id='track-streams'>
+                <!-- Track positions output here -->
+              </tbody>
+            </table>
+
+        </div>
 
         </article>
-
-        <a href='#all'>All</a>
 
       </section>
 

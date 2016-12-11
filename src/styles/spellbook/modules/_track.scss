@@ -1,0 +1,45 @@
+// *************************************
+//
+//   Track
+//   -> Individual listing of a track
+//
+// *************************************
+
+.track-container {
+  padding: $space;
+}
+
+.track-info {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.track-img {
+  display: block;
+  margin: 0 $space $space-05 0;
+  width: 200px;
+}
+
+.track-artist {
+  color: $boulder;
+  font-family: $fontFamily;
+  font-weight: normal;
+}
+
+.track-table {
+  display: inline-block;
+  margin-top: $space;
+  width: auto;
+
+  td, th {
+    border: 1px solid $mineShaft;
+    padding: $space-025 $space;
+    text-align: center;
+  }
+
+  th {
+    font-family: $heading-fontFamily;
+  }
+
+}

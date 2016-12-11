@@ -10,7 +10,10 @@ const precacheFiles = [
     './index.html',
 
     './images/6fujklziTHa8uoM5OQSfIo.jpeg',
-    './images/7MXVkk9YMctZqd1Srtv4MB.jpeg'
+    './images/7MXVkk9YMctZqd1Srtv4MB.jpeg',
+
+    './fonts/PTS55F-webfont.woff',
+    './fonts/PTS75F-webfont.woff'
 ];
 toolbox.precache(precacheFiles);
 

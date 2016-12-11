@@ -102,10 +102,12 @@
         const trackStreams = response.tracks[index].trackStreams;
 
         // Output track meta information
-        document.querySelector('#track-meta').innerHTML = `
-          <img src='images/${ID}.jpeg' />
-          <h1>${name}</h1>
-          <h2>${artist}</h2>
+        document.querySelector('#track-info').innerHTML = `
+          <img class='track-img' src='images/${ID}.jpeg' />
+          <div class='meta'>
+            <h1 class='track-title'>${name}</h1>
+            <h2 class='track-artist'>${artist}</h2>
+          </div>
         `;
 
         // Output track positions
@@ -113,7 +115,10 @@
           const date = trackPosition.positionDate;
           const rank = trackPosition.positionRank;
           document.querySelector('#track-positions').innerHTML += `
-            <li>${date}: ${rank}</li>
+            <tr>
+              <td>${date}</td>
+              <td>${rank}</td>
+            </tr>
           `;
         });
 
@@ -122,7 +127,10 @@
           const date = trackStream.streamDate;
           const count = trackStream.streamCount;
           document.querySelector('#track-streams').innerHTML += `
-            <li>${date}: ${count}</li>
+          <tr>
+            <td>${date}</td>
+            <td>${count}</td>
+          </tr>
           `;
         });
 
