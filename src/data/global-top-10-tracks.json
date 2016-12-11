@@ -12,6 +12,10 @@
         {
           "positionDate": "12/2/16",
           "positionRank": "1"
+        },
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "1"
         }
 			],
       "trackStreams": [
@@ -22,6 +26,10 @@
         {
           "streamDate": "12/2/16",
           "streamCount": "5080690"
+        },
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "4699816"
         }
 			]
 		},
@@ -37,6 +45,10 @@
         {
           "positionDate": "12/2/16",
           "positionRank": "2"
+        },
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "2"
         }
 			],
       "trackStreams": [
@@ -47,6 +59,10 @@
         {
           "streamDate": "12/2/16",
           "streamCount": "3951687"
+        },
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "3847462"
         }
 			]
 		},
@@ -62,6 +78,10 @@
         {
           "positionDate": "12/2/16",
           "positionRank": "3"
+        },
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "3"
         }
 			],
       "trackStreams": [
@@ -72,6 +92,10 @@
         {
           "streamDate": "12/2/16",
           "streamCount": "3761452"
+        },
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "3666795"
         }
 			]
 		},
@@ -87,6 +111,10 @@
         {
           "positionDate": "12/2/16",
           "positionRank": "4"
+        },
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "5"
         }
 			],
       "trackStreams": [
@@ -97,6 +125,10 @@
         {
           "streamDate": "12/2/16",
           "streamCount": "3253935"
+        },
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "2916353"
         }
 			]
 		},
@@ -137,6 +169,10 @@
         {
           "positionDate": "12/2/16",
           "positionRank": "5"
+        },
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "4"
         }
 			],
       "trackStreams": [
@@ -147,6 +183,10 @@
         {
           "streamDate": "12/2/16",
           "streamCount": "2979524"
+        },
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "2922543"
         }
 			]
 		},
@@ -162,6 +202,10 @@
         {
           "positionDate": "12/2/16",
           "positionRank": "7"
+        },
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "7"
         }
 			],
       "trackStreams": [
@@ -172,6 +216,10 @@
         {
           "streamDate": "12/2/16",
           "streamCount": "2887521"
+        },
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "2826920"
         }
 			]
 		},
@@ -187,6 +235,10 @@
         {
           "positionDate": "12/2/16",
           "positionRank": "6"
+        },
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "6"
         }
 			],
       "trackStreams": [
@@ -197,6 +249,10 @@
         {
           "streamDate": "12/2/16",
           "streamCount": "2966952"
+        },
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "2904306"
         }
 			]
 		},
@@ -237,6 +293,10 @@
         {
           "positionDate": "12/2/16",
           "positionRank": "9"
+        },
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "8"
         }
 			],
       "trackStreams": [
@@ -247,6 +307,44 @@
         {
           "streamDate": "12/2/16",
           "streamCount": "2654904"
+        },
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "2612938"
+        }
+			]
+		},
+    {
+      "trackID": "6NMNgWgEAzde5M8U3lc6FN",
+      "trackName": "Fake Love",
+			"trackArtist": "Drake",
+			"trackPositions": [
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "9"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "2501790"
+        }
+			]
+		},
+    {
+      "trackID": "6DNtNfH8hXkqOX1sjqmI7p",
+      "trackName": "Cold Water",
+			"trackArtist": "Major Lazer, Justin Bieber, MØ",
+			"trackPositions": [
+        {
+          "positionDate": "12/3/16",
+          "positionRank": "10"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "2454216"
         }
 			]
 		}
