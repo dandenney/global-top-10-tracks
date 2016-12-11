@@ -8,17 +8,17 @@
   // -------------------------------------
   //   Register a Service Worker
   // -------------------------------------
-  // if ('serviceWorker' in navigator) {
-  //   window.addEventListener('load', function () {
-  //     navigator.serviceWorker.register('/sw.js').then(function (registration) {
-  //       // Registration was successful
-  //       console.log('SW reg succesful with scope: ', registration.scope);
-  //     }).catch(function (err) {
-  //       // Regisration failed
-  //       console.log('SW registration failed: ', err);
-  //     });
-  //   });
-  // }
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').then(function (registration) {
+        // Registration was successful
+        console.log('SW reg succesful with scope: ', registration.scope);
+      }).catch(function (err) {
+        // Regisration failed
+        console.log('SW registration failed: ', err);
+      });
+    });
+  }
 
   // -------------------------------------
   //   Fetch JSON
