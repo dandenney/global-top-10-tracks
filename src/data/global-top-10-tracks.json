@@ -49,6 +49,206 @@
           "streamCount": "3951687"
         }
 			]
+		},
+    {
+      "trackID": "7BKLCZ1jbUBVqRi2FVlTVw",
+      "trackName": "Closer",
+			"trackArtist": "The Chainsmokers",
+			"trackPositions": [
+        {
+          "positionDate": "12/1/16",
+          "positionRank": "3"
+        },
+        {
+          "positionDate": "12/2/16",
+          "positionRank": "3"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/1/16",
+          "streamCount": "3578278"
+        },
+        {
+          "streamDate": "12/2/16",
+          "streamCount": "3761452"
+        }
+			]
+		},
+    {
+      "trackID": "3dhjNA0jGA8vHBQ1VdD6vV",
+      "trackName": "I Feel It Coming",
+			"trackArtist": "The Weeknd",
+			"trackPositions": [
+        {
+          "positionDate": "12/1/16",
+          "positionRank": "4"
+        },
+        {
+          "positionDate": "12/2/16",
+          "positionRank": "4"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/1/16",
+          "streamCount": "3364831"
+        },
+        {
+          "streamDate": "12/2/16",
+          "streamCount": "3253935"
+        }
+			]
+		},
+    {
+      "trackID": "4F7A0DXBrmUAkp32uenhZt",
+      "trackName": "Party Monster",
+			"trackArtist": "The Weeknd",
+			"trackPositions": [
+        {
+          "positionDate": "12/1/16",
+          "positionRank": "5"
+        },
+        {
+          "positionDate": "12/2/16",
+          "positionRank": "8"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/1/16",
+          "streamCount": "2883560"
+        },
+        {
+          "streamDate": "12/2/16",
+          "streamCount": "2660903"
+        }
+			]
+		},
+    {
+      "trackID": "4pdPtRcBmOSQDlJ3Fk945m",
+      "trackName": "Let Me Love You",
+			"trackArtist": "DJ Snake, Justin Bieber",
+			"trackPositions": [
+        {
+          "positionDate": "12/1/16",
+          "positionRank": "6"
+        },
+        {
+          "positionDate": "12/2/16",
+          "positionRank": "5"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/1/16",
+          "streamCount": "2860263"
+        },
+        {
+          "streamDate": "12/2/16",
+          "streamCount": "2979524"
+        }
+			]
+		},
+    {
+      "trackID": "5MFzQMkrl1FOOng9tq6R9r",
+      "trackName": "Don't Wanna Know",
+			"trackArtist": "Maroon 5, Kendrick Lamar",
+			"trackPositions": [
+        {
+          "positionDate": "12/1/16",
+          "positionRank": "7"
+        },
+        {
+          "positionDate": "12/2/16",
+          "positionRank": "7"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/1/16",
+          "streamCount": "2825015"
+        },
+        {
+          "streamDate": "12/2/16",
+          "streamCount": "2887521"
+        }
+			]
+		},
+    {
+      "trackID": "5knuzwU65gJK7IF5yJsuaW",
+      "trackName": "Rockabye",
+			"trackArtist": "Clean Bandit, Sean Paul, Anne-Marie",
+			"trackPositions": [
+        {
+          "positionDate": "12/1/16",
+          "positionRank": "8"
+        },
+        {
+          "positionDate": "12/2/16",
+          "positionRank": "6"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/1/16",
+          "streamCount": "2790372"
+        },
+        {
+          "streamDate": "12/2/16",
+          "streamCount": "2966952"
+        }
+			]
+		},
+    {
+      "trackID": "5uCax9HTNlzGybIStD3vDh",
+      "trackName": "Say You Won't Let Go",
+			"trackArtist": "James Arthur",
+			"trackPositions": [
+        {
+          "positionDate": "12/1/16",
+          "positionRank": "9"
+        },
+        {
+          "positionDate": "12/2/16",
+          "positionRank": "10"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/1/16",
+          "streamCount": "2617100"
+        },
+        {
+          "streamDate": "12/2/16",
+          "streamCount": "2580429"
+        }
+			]
+		},
+    {
+      "trackID": "6b8Be6ljOzmkOmFslEb23P",
+      "trackName": "24K Magic",
+			"trackArtist": "Bruno Mars",
+			"trackPositions": [
+        {
+          "positionDate": "12/1/16",
+          "positionRank": "10"
+        },
+        {
+          "positionDate": "12/2/16",
+          "positionRank": "9"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/1/16",
+          "streamCount": "2547827"
+        },
+        {
+          "streamDate": "12/2/16",
+          "streamCount": "2654904"
+        }
+			]
 		}
 	]
 }
