@@ -28,6 +28,10 @@
         {
           "positionDate": "12/6/16",
           "positionRank": "1"
+        },
+        {
+          "positionDate": "12/7/16",
+          "positionRank": "1"
         }
 			],
       "trackStreams": [
@@ -54,6 +58,10 @@
         {
           "streamDate": "12/6/16",
           "streamCount": "4384301"
+        },
+        {
+          "streamDate": "12/7/16",
+          "streamCount": "4606476"
         }
 			]
 		},
@@ -85,6 +93,10 @@
         {
           "positionDate": "12/6/16",
           "positionRank": "3"
+        },
+        {
+          "positionDate": "12/7/16",
+          "positionRank": "3"
         }
 			],
       "trackStreams": [
@@ -111,6 +123,10 @@
         {
           "streamDate": "12/6/16",
           "streamCount": "3373248"
+        },
+        {
+          "streamDate": "12/7/16",
+          "streamCount": "3527273"
         }
 			]
 		},
@@ -142,6 +158,10 @@
         {
           "positionDate": "12/6/16",
           "positionRank": "2"
+        },
+        {
+          "positionDate": "12/7/16",
+          "positionRank": "2"
         }
 			],
       "trackStreams": [
@@ -164,6 +184,10 @@
         {
           "streamDate": "12/6/16",
           "streamCount": "3380937"
+        },
+        {
+          "streamDate": "12/7/16",
+          "streamCount": "3582143"
         }
 			]
 		},
@@ -195,6 +219,10 @@
         {
           "positionDate": "12/6/16",
           "positionRank": "4"
+        },
+        {
+          "positionDate": "12/7/16",
+          "positionRank": "5"
         }
 			],
       "trackStreams": [
@@ -221,6 +249,10 @@
         {
           "streamDate": "12/6/16",
           "streamCount": "2815882"
+        },
+        {
+          "streamDate": "12/7/16",
+          "streamCount": "2988203"
         }
 			]
 		},
@@ -277,6 +309,10 @@
         {
           "positionDate": "12/6/16",
           "positionRank": "7"
+        },
+        {
+          "positionDate": "12/7/16",
+          "positionRank": "7"
         }
 			],
       "trackStreams": [
@@ -303,6 +339,10 @@
         {
           "streamDate": "12/6/16",
           "streamCount": "2719813"
+        },
+        {
+          "streamDate": "12/7/16",
+          "streamCount": "2878945"
         }
 			]
 		},
@@ -334,6 +374,10 @@
         {
           "positionDate": "12/6/16",
           "positionRank": "6"
+        },
+        {
+          "positionDate": "12/7/16",
+          "positionRank": "6"
         }
 			],
       "trackStreams": [
@@ -360,6 +404,10 @@
         {
           "streamDate": "12/6/16",
           "streamCount": "2747094"
+        },
+        {
+          "streamDate": "12/7/16",
+          "streamCount": "2900807"
         }
 			]
 		},
@@ -391,6 +439,10 @@
         {
           "positionDate": "12/6/16",
           "positionRank": "5"
+        },
+        {
+          "positionDate": "12/7/16",
+          "positionRank": "4"
         }
 			],
       "trackStreams": [
@@ -417,6 +469,10 @@
         {
           "streamDate": "12/6/16",
           "streamCount": "2795766"
+        },
+        {
+          "streamDate": "12/7/16",
+          "streamCount": "3009981"
         }
 			]
 		},
@@ -444,6 +500,10 @@
         {
           "positionDate": "12/6/16",
           "positionRank": "8"
+        },
+        {
+          "positionDate": "12/7/16",
+          "positionRank": "8"
         }
 			],
       "trackStreams": [
@@ -466,6 +526,10 @@
         {
           "streamDate": "12/6/16",
           "streamCount": "2586092"
+        },
+        {
+          "streamDate": "12/7/16",
+          "streamCount": "2741617"
         }
 			]
 		},
@@ -497,6 +561,10 @@
         {
           "positionDate": "12/6/16",
           "positionRank": "10"
+        },
+        {
+          "positionDate": "12/7/16",
+          "positionRank": "10"
         }
 			],
       "trackStreams": [
@@ -523,6 +591,10 @@
         {
           "streamDate": "12/6/16",
           "streamCount": "2431969"
+        },
+        {
+          "streamDate": "12/7/16",
+          "streamCount": "2568899"
         }
 			]
 		},
@@ -546,6 +618,10 @@
 				{
           "positionDate": "12/6/16",
           "positionRank": "9"
+        },
+				{
+          "positionDate": "12/7/16",
+          "positionRank": "9"
         }
 			],
       "trackStreams": [
@@ -564,6 +640,10 @@
 				{
           "streamDate": "12/6/16",
           "streamCount": "2492471"
+        },
+				{
+          "streamDate": "12/7/16",
+          "streamCount": "2634716"
         }
 			]
 		},
