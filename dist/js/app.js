@@ -125,7 +125,7 @@
         // Output track positions
         trackStreams.forEach(trackStream => {
           const date = trackStream.streamDate;
-          const count = trackStream.streamCount;
+          const count = numberWithCommas(trackStream.streamCount);
           document.querySelector('#track-streams').innerHTML += `
           <tr>
             <td>${count}</td>
@@ -136,6 +136,11 @@
       });
     });
 
+  }
+
+  // http://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
   // -------------------------------------
