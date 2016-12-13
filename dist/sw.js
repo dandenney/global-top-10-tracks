@@ -1,29 +1,26 @@
 // Service Worker Toolbox
 importScripts('/sw-toolbox/sw-toolbox.js');
 
-// Files to precache
-const precacheFiles = [
-    './',
-    './data/global-top-10-tracks.json',
-    './js/app.js',
-    './styles/app.css',
-    './index.html',
+(global => {
+  'use strict';
 
-    './images/6fujklziTHa8uoM5OQSfIo.jpeg',
-    './images/7MXVkk9YMctZqd1Srtv4MB.jpeg',
+  // Turn on debug logging, visible in the Developer Tools' console.
+  global.toolbox.options.debug = true;
 
-    './fonts/PTS55F-webfont.woff',
-    './fonts/PTS75F-webfont.woff'
-];
-toolbox.precache(precacheFiles);
+  // The route for the images
+  toolbox.router.get('/images/(.*)', global.toolbox.networkFirst, {
+    cache: {
+          name: 'jpeg',
+          maxEntries: 100,
+          maxAgeSeconds: 86400 // cache for a day
+        }
+  });
 
-// Install and Activate events
-self.addEventListener('install', (event) => event.waitUntil(self.skipWaiting()));
-self.addEventListener('activate', (event) => event.waitUntil(self.clients.claim()));
+  // By default, all requests that don't match our custom handler will use the toolbox.networkFirst
+  // cache strategy, and their responses will be stored in the default cache.
+  global.toolbox.router.default = global.toolbox.networkFirst;
 
-// Fetch events
-self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        caches.match(event.request).then((response) => response || fetch(event.request))
-    );
-});
+  // Boilerplate to ensure our service worker takes control of the page as soon as possible.
+  global.addEventListener('install', event => event.waitUntil(global.skipWaiting()));
+  global.addEventListener('activate', event => event.waitUntil(global.clients.claim()));
+})(self);
