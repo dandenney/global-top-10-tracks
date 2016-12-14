@@ -90,8 +90,6 @@
 
       // Listen for clicks to tracks
       trackLink.addEventListener('click', function () {
-        document.querySelector('#track-positions').innerHTML = '';
-        document.querySelector('#track-streams').innerHTML = '';
 
         // Variables
         const index = this.getAttribute('data-track');
@@ -112,29 +110,6 @@
             <h2 class='track-artist'>${artist}</h2>
           </div>
         `;
-
-        // Output track positions
-        trackPositions.forEach(trackPosition => {
-          const date = trackPosition.positionDate;
-          const rank = trackPosition.positionRank;
-          document.querySelector('#track-positions').innerHTML += `
-            <tr>
-              <td>${date}</td>
-              <td>${rank}</td>
-            </tr>
-          `;
-        });
-
-        // Output track positions
-        trackStreams.forEach(trackStream => {
-          const date = trackStream.streamDate;
-          const count = numberWithCommas(trackStream.streamCount);
-          document.querySelector('#track-streams').innerHTML += `
-          <tr>
-            <td>${count}</td>
-          </tr>
-          `;
-        });
 
         chartPosition(trackPositionsDates, trackPositionsRanks);
 
