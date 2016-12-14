@@ -143,8 +143,58 @@
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
+  function chartPosition() {
+
+    let dates = ["12/1", "12/2", "12/3", "12/4", "12/5", "12/6", "12/7", "12/8", "12/9", "12/10", "12/11"];
+    let positions = [10, 9, 8, 10, 10, 10, 10, 10, 9, 9];
+    const ctx = document.querySelector("#chart-position");
+    const data = {
+      labels: dates,
+      datasets: [
+        {
+          label: "Top 10 Position",
+          fill: false,
+          lineTension: 0.1,
+          gridlinesColor: '#ffffff',
+          backgroundColor: "rgba(75,192,192,0.4)",
+          borderColor: "rgba(30,214,95,0.2)",
+          borderCapStyle: 'butt',
+          borderDash: [],
+          borderDashOffset: 0.0,
+          borderJoinStyle: 'miter',
+          pointRadius: 3,
+          pointBorderColor: '#1ed65f',
+          pointBackgroundColor: '#000000',
+          pointBorderWidth: '2',
+          data: positions,
+          spanGaps: false
+        }
+      ]
+    };
+    let myLineChart = new Chart(ctx, {
+      type: 'line',
+      data: data,
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              max: 10,
+              min: 1,
+              reverse: true
+            },
+            gridLines: {
+              color: "#111111",
+            }
+          }]
+        }
+      }
+    });
+
+  }
+
   // -------------------------------------
   //   Initialize
   // -------------------------------------
 
   outputJSON();
+  chartPosition();
