@@ -126,13 +126,18 @@
         const streamsTotal = trackStreamsCounts.reduce((a, b) => a + b, 0);
         const streamsTotalFormatted = numberWithCommas(streamsTotal);
 
+        // Calculate average streams per day
+        const streamsFilter = trackStreamsCounts.filter( trackStreamsCount => trackStreamsCount > 0);
+        const streamsAverage = streamsTotal / streamsFilter.length;
+        const streamsAverageFormatted = numberWithCommas(streamsAverage);
+
         // Output track performance information
         document.querySelector('#track-performance').innerHTML = `
           <p>
-            ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Ten</a> ${rankedCount} times since December 1, debuting at number ${rankedInitial} and reach as high as number ${rankedHighest}.
+            ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> ${rankedCount} times since December 1, debuting at number ${rankedInitial} and reach as high as number ${rankedHighest}.
           </p>
           <p>
-            Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging 2,248,036 streams per day. The most streams were 2,634,716 on December 7th and the least were 2,278,672 on December 11th.
+            Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging ${streamsAverageFormatted} streams per day. The most streams were 2,634,716 on December 7th and the least were 2,278,672 on December 11th.
           </p>
         `
 
