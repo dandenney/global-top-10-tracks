@@ -128,7 +128,7 @@
 
         // Calculate average streams per day
         const streamsFilter = trackStreamsCounts.filter( trackStreamsCount => trackStreamsCount > 0);
-        const streamsAverage = streamsTotal / streamsFilter.length;
+        const streamsAverage = Math.round(streamsTotal / streamsFilter.length);
         const streamsAverageFormatted = numberWithCommas(streamsAverage);
 
         // Find highest stream count
