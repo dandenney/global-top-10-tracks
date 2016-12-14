@@ -114,7 +114,7 @@
         // Output track performance information
         document.querySelector('#track-performance').innerHTML = `
           <p>
-            Fake Love has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Ten</a> 12 times since December 1, debuting at number 9 and reach as high as number 9.
+            ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Ten</a> 12 times since December 1, debuting at number 9 and reach as high as number 9.
           </p>
           <p>
             Those 9 times in the top 10 account for 26,976,342 streams, averaging 2,248,036 streams per day. The most streams were 2,634,716 on December 7th and the least were 2,278,672 on December 11th.
