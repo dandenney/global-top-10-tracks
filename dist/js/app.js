@@ -98,8 +98,9 @@
         const ID = response.tracks[index].trackID;
         const trackPositions = response.tracks[index].trackPositions;
         const trackStreams = response.tracks[index].trackStreams;
-        const trackPositionsDates = trackPositions.map((a) => a.positionDate );
-        const trackPositionsRanks = trackPositions.map((a) => a.positionRank );
+        const trackPositionsDates = trackPositions.map( (a) => a.positionDate );
+        const trackPositionsRanks = trackPositions.map( (a) => a.positionRank );
+        const trackStreamsCounts = trackStreams.map( (a) => Number(a.streamCount) );
 
 
         // Output track meta information
@@ -121,13 +122,17 @@
         // Find highest rank (Hint: it's opposite day)
         const rankedHighest = Math.min(...rankedFilter);
 
+        // Calculate streams total
+        const streamsTotal = trackStreamsCounts.reduce((a, b) => a + b, 0);
+        const streamsTotalFormatted = numberWithCommas(streamsTotal);
+
         // Output track performance information
         document.querySelector('#track-performance').innerHTML = `
           <p>
             ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Ten</a> ${rankedCount} times since December 1, debuting at number ${rankedInitial} and reach as high as number ${rankedHighest}.
           </p>
           <p>
-            Those ${rankedCount} times combine for a total of 26,976,342 streams, averaging 2,248,036 streams per day. The most streams were 2,634,716 on December 7th and the least were 2,278,672 on December 11th.
+            Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging 2,248,036 streams per day. The most streams were 2,634,716 on December 7th and the least were 2,278,672 on December 11th.
           </p>
         `
 
