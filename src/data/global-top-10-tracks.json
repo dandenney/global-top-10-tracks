@@ -718,6 +718,10 @@
           "positionRank": "10"
         },
         {
+          "positionDate": "12/3/16",
+          "positionRank": null
+        },
+        {
           "positionDate": "12/4/16",
           "positionRank": "8"
         },
@@ -734,6 +738,18 @@
           "positionRank": "8"
         },
         {
+          "positionDate": "12/8/16",
+          "positionRank": null
+        },
+        {
+          "positionDate": "12/9/16",
+          "positionRank": null
+        },
+        {
+          "positionDate": "12/10/16",
+          "positionRank": null
+        },
+        {
           "positionDate": "12/11/16",
           "positionRank": "8"
         }
@@ -746,6 +762,10 @@
         {
           "streamDate": "12/2/16",
           "streamCount": "2580429"
+        },
+        {
+          "streamDate": "12/3/16",
+          "streamCount": "0"
         },
         {
           "streamDate": "12/4/16",
@@ -762,6 +782,18 @@
         {
           "streamDate": "12/7/16",
           "streamCount": "2741617"
+        },
+				{
+          "streamDate": "12/8/16",
+          "streamCount": "0"
+        },
+				{
+          "streamDate": "12/9/16",
+          "streamCount": "0"
+        },
+				{
+          "streamDate": "12/10/16",
+          "streamCount": "0"
         },
         {
           "streamDate": "12/11/16",
@@ -844,6 +876,10 @@
           "streamDate": "12/7/16",
           "streamCount": "2568899"
         },
+				{
+          "streamDate": "12/8/16",
+          "streamCount": "2476741"
+        },
         {
           "streamDate": "12/9/16",
           "streamCount": "2615991"
@@ -888,6 +924,10 @@
           "positionRank": "10"
         },
 				{
+          "positionDate": "12/10/16",
+          "positionRank": null
+        },
+				{
           "positionDate": "12/11/16",
           "positionRank": "9"
         }
@@ -920,6 +960,10 @@
 				{
           "streamDate": "12/9/16",
           "streamCount": "2608739"
+        },
+				{
+          "streamDate": "12/10/16",
+          "streamCount": "0"
         },
 				{
           "streamDate": "12/11/16",
