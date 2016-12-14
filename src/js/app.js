@@ -100,6 +100,9 @@
         const ID = response.tracks[index].trackID;
         const trackPositions = response.tracks[index].trackPositions;
         const trackStreams = response.tracks[index].trackStreams;
+        const trackPositionsDates = trackPositions.map((a) => a.positionDate );
+        const trackPositionsRanks = trackPositions.map((a) => a.positionRank );
+
 
         // Output track meta information
         document.querySelector('#track-info').innerHTML = `
@@ -133,6 +136,8 @@
           `;
         });
 
+        chartPosition(trackPositionsDates, trackPositionsRanks);
+
       });
     });
 
@@ -143,13 +148,11 @@
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  function chartPosition() {
+  function chartPosition(trackPositionsDates, trackPositionsRanks) {
 
-    let dates = ["12/1", "12/2", "12/3", "12/4", "12/5", "12/6", "12/7", "12/8", "12/9", "12/10", "12/11"];
-    let positions = [10, 9, 8, 10, 10, 10, 10, 10, 9, 9];
     const ctx = document.querySelector("#chart-position");
     const data = {
-      labels: dates,
+      labels: trackPositionsDates,
       datasets: [
         {
           label: "Top 10 Position",
@@ -166,7 +169,7 @@
           pointBorderColor: '#1ed65f',
           pointBackgroundColor: '#000000',
           pointBorderWidth: '2',
-          data: positions,
+          data: trackPositionsRanks,
           spanGaps: false
         }
       ]
@@ -197,4 +200,3 @@
   // -------------------------------------
 
   outputJSON();
-  chartPosition();
