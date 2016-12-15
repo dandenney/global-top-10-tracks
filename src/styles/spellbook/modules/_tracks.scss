@@ -5,10 +5,16 @@
 //
 // *************************************
 
+.tracks-link {
+  align-items: center;
+  display: flex;
+}
+
 .tracks-img {
   display: block;
-  margin-bottom: $space-05;
-  width: 200px;
+  opacity: 0.4;
+  transition: opacity 0.25s ease-in-out;
+  width: 110px;
 }
 
 .tracks {
@@ -18,10 +24,13 @@
 }
 
 .tracks-track {
-  background: $black;
-  border: 1px solid $mineShaft;
+  background: rgba(#3a6186, .1);
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 2px rgba(0, 0, 0, .1);
+  flex-basis: 20%;
   margin: $space-025;
   padding: $space-05;
+  position: relative;
   transition: transform 0.25s ease-in-out;
 
   a {
@@ -30,10 +39,16 @@
 
   &:hover,
   &:active {
+    box-shadow: 0 1px 8px 4px rgba(0, 0, 0, .1);
     transform: scale(1.05);
+    z-index: 1;
 
     a {
       color: $white;
+    }
+
+    .tracks-img {
+      opacity: 1;
     }
 
   }
@@ -45,7 +60,7 @@
 }
 
 .tracks-artist {
-  color: $boulder;
+  color: rgba($white, 0.6);
   font-weight: normal;
   margin: 0 0 $space-025 0;
 }

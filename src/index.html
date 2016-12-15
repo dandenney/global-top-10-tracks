@@ -19,30 +19,39 @@
     <!-- My main -->
     <main>
 
-      <section id='track'>
+      <section id='track-container'>
 
-        <article class='track-container' id='track-container'>
+        <div class='track-container'>
 
-          <div class='track-info' id='track-meta'>
-            <!-- Track meta outputs here -->
+          <article class='track' id='track'>
+
+            <div class='track-info' id='track-meta'>
+              <!-- Track meta outputs here -->
+            </div>
+
+            <div class='sb-cell sb-cell-s' id='track-performance'>
+              <!-- Track meta outputs here -->
+            </div>
+
+          </article>
+
+        </div>
+
+        <div class='sb-row'>
+          <div class='sb-well'>
+            <canvas id="chart-position" width="400" height="200"></canvas>
           </div>
-
-          <div class='sb-cell sb-cell-s' id='track-performance'>
-            <!-- Track meta outputs here -->
-          </div>
-
-          <div class='sb-cell sb-cell-s sb-mt-2'>
-            <!-- Track graph outputs here -->
-            <canvas id="chart-position" width="400" height="300"></canvas>
-          </div>
-
-        </article>
+        </div>
 
         <a class='link-all' href='#all'>All</a>
 
       </section>
 
       <section id='all'>
+
+        <div class='sb-cell sb-cell-s tac'>
+          <p>Stats that you didn't know that you wanted to know about the songs that make it into the Top 10 of Spotify's Global Chart.</p>
+        </div>
 
         <div class='tracks' id='tracks-container'>
 

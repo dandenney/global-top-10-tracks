@@ -68,11 +68,14 @@
       // Output from the JSON keys using template strings, woohoo!
       document.querySelector('#tracks-container').innerHTML += `
         <article class='tracks-track'>
-          <a class='tracks-link' data-track='${i}' href='#track'>
-            <img class='tracks-img' src='images/${ID}.jpeg' />
-            <h4 class='tracks-title'>${name}</h4>
-            <h5 class='tracks-artist'>${artist}</h5>
-            <p class='tracks-lastRanked'><!-- TODO: Output last item in dates array -->12/2/16</p>
+          <a class='tracks-link' data-track='${i}' href='#track-container'>
+            <div>
+              <img class='tracks-img' src='images/${ID}.jpeg' />
+            </div>
+            <div class='sb-pl-05'>
+              <h4 class='tracks-title'>${name}</h4>
+              <h5 class='tracks-artist'>${artist}</h5>
+            </div>
           </a>
         </article>
       `;
@@ -153,8 +156,8 @@
 
         // Output track performance information
         document.querySelector('#track-performance').innerHTML = `
-          <p>
-            ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> ${rankedCount} times since 12/1/16, debuting at number ${rankedInitial} and reaching as high as number ${rankedHighest}.
+          <p class='track-performance'>
+            <span>${name}</span> has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> <span>${rankedCount}</span> times since 12/1/16, debuting at number ${rankedInitial} and reaching as high as number ${rankedHighest}.
           </p>
           <p>
             Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging ${streamsAverageFormatted} streams per day. The most streams were ${streamsHighestFormatted} on ${streamsHighestDate} and the least were ${streamsLowestFormatted} on ${streamsLowestDate}.
@@ -184,17 +187,16 @@
           label: "Top 10 Position",
           fill: false,
           lineTension: 0.1,
-          gridlinesColor: '#ffffff',
           backgroundColor: "rgba(75,192,192,0.4)",
-          borderColor: "rgba(30,214,95,0.2)",
+          borderColor: "rgba(215,112,138, 0.2)",
           borderCapStyle: 'butt',
           borderDash: [],
           borderDashOffset: 0.0,
           borderJoinStyle: 'miter',
-          pointRadius: 3,
-          pointBorderColor: '#1ed65f',
-          pointBackgroundColor: '#000000',
-          pointBorderWidth: '2',
+          pointRadius: 4,
+          pointBorderColor: 'rgba(215,112,138, 0.2)',
+          pointBackgroundColor: 'rgba(255, 255, 255, 0.8)',
+          pointBorderWidth: '6',
           data: trackPositionsRanks,
           spanGaps: false
         }
@@ -204,15 +206,30 @@
       type: 'line',
       data: data,
       options: {
+        legend: {
+          labels: {
+            fontColor: 'rgba(255, 255, 255, 0.4)',
+            fontSize: 14
+          }
+        },
         scales: {
           yAxes: [{
             ticks: {
+              fontColor: 'rgba(255, 255, 255, 0.4)',
               max: 10,
               min: 1,
               reverse: true
             },
             gridLines: {
-              color: "#111111",
+              display: false
+            }
+          }],
+          xAxes: [{
+            ticks: {
+              fontColor: 'rgba(255, 255, 255, 0.4)'
+            },
+            gridLines: {
+              color: "rgba(255, 255, 255, 0.025)"
             }
           }]
         }

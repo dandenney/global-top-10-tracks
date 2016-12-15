@@ -6,13 +6,21 @@
 // *************************************
 
 .track-container {
+  display: flex;
+  justify-content: center;
   padding: $space;
+}
+
+.track {
+  background: rgba(#3a6186, .1);
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 2px rgba(0, 0, 0, .1);
+  padding: $space-2;
 }
 
 .track-info {
   align-items: center;
   display: flex;
-  justify-content: center;
 }
 
 .track-img {
@@ -22,39 +30,11 @@
 }
 
 .track-artist {
-  color: $boulder;
+  color: rgba($white, 0.6);
   font-family: $fontFamily;
   font-weight: normal;
 }
 
-.track-table {
-  display: inline-block;
-  margin-top: $space;
-  width: auto;
-
-  td, th {
-    border: 1px solid $mineShaft;
-    padding: $space-025 $space;
-    text-align: center;
-  }
-
-  th {
-    font-family: $heading-fontFamily;
-  }
-
-  + .track-table {
-    margin-left: -5px;
-  }
-
-  + .track-table td {
-    border-left: none;
-  }
-
-  + .track-table th {
-    border-left: none;
-  }
-
-}
 
 .link-all {
   left: $space;
