@@ -133,6 +133,7 @@
 
         // Find highest stream count
         const streamsHighest = Math.max(...streamsFilter);
+        const streamsHighestFormatted = numberWithCommas(streamsHighest);
 
         // Find index of highest stream count
         const streamsHighestIndex = trackStreamsCounts.indexOf(streamsHighest);
@@ -142,6 +143,7 @@
 
         // Find lowest stream count
         const streamsLowest = Math.min(...streamsFilter);
+        const streamsLowestFormatted = numberWithCommas(streamsLowest);
 
         // Find index of lowest stream count
         const streamsLowestIndex = trackStreamsCounts.indexOf(streamsLowest);
@@ -155,7 +157,7 @@
             ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> ${rankedCount} times since 12/1/16, debuting at number ${rankedInitial} and reaching as high as number ${rankedHighest}.
           </p>
           <p>
-            Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging ${streamsAverageFormatted} streams per day. The most streams were ${streamsHighest} on ${streamsHighestDate} and the least were ${streamsLowest} on ${streamsLowestDate}.
+            Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging ${streamsAverageFormatted} streams per day. The most streams were ${streamsHighestFormatted} on ${streamsHighestDate} and the least were ${streamsLowestFormatted} on ${streamsLowestDate}.
           </p>
         `
 
