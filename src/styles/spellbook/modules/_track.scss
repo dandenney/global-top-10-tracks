@@ -24,8 +24,11 @@
 }
 
 .track-img {
+  background: rgba($white, 0.025);
+  border: 1px solid rgba($white, 0.05);
   display: block;
   margin: 0 $space $space-05 0;
+  padding: $space-05;
   width: 200px;
 }
 
@@ -34,7 +37,6 @@
   font-family: $fontFamily;
   font-weight: normal;
 }
-
 
 .link-all {
   left: $space;
