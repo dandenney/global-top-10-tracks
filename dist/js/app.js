@@ -100,8 +100,8 @@
         const trackStreams = response.tracks[index].trackStreams;
         const trackPositionsDates = trackPositions.map( (a) => a.positionDate );
         const trackPositionsRanks = trackPositions.map( (a) => a.positionRank );
+        const trackStreamsDates = trackStreams.map( (a) => a.streamDate );
         const trackStreamsCounts = trackStreams.map( (a) => Number(a.streamCount) );
-
 
         // Output track meta information
         document.querySelector('#track-meta').innerHTML = `
@@ -134,16 +134,28 @@
         // Find highest stream count
         const streamsHighest = Math.max(...streamsFilter);
 
+        // Find index of highest stream count
+        const streamsHighestIndex = trackStreamsCounts.indexOf(streamsHighest);
+
+        // Get date of highest stream count
+        const streamsHighestDate = trackStreamsDates[streamsHighestIndex];
+
         // Find lowest stream count
         const streamsLowest = Math.min(...streamsFilter);
+
+        // Find index of lowest stream count
+        const streamsLowestIndex = trackStreamsCounts.indexOf(streamsLowest);
+
+        // Get date of highest stream count
+        const streamsLowestDate = trackStreamsDates[streamsLowestIndex];
 
         // Output track performance information
         document.querySelector('#track-performance').innerHTML = `
           <p>
-            ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> ${rankedCount} times since December 1, debuting at number ${rankedInitial} and reach as high as number ${rankedHighest}.
+            ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> ${rankedCount} times since 12/1/16, debuting at number ${rankedInitial} and reach as high as number ${rankedHighest}.
           </p>
           <p>
-            Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging ${streamsAverageFormatted} streams per day. The most streams were ${streamsHighest} on December 7th and the least were ${streamsLowest} on December 11th.
+            Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging ${streamsAverageFormatted} streams per day. The most streams were ${streamsHighest} on ${streamsHighestDate} and the least were ${streamsLowest} on ${streamsLowestDate}.
           </p>
         `
 
