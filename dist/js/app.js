@@ -152,7 +152,7 @@
         // Output track performance information
         document.querySelector('#track-performance').innerHTML = `
           <p>
-            ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> ${rankedCount} times since 12/1/16, debuting at number ${rankedInitial} and reach as high as number ${rankedHighest}.
+            ${name} has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> ${rankedCount} times since 12/1/16, debuting at number ${rankedInitial} and reaching as high as number ${rankedHighest}.
           </p>
           <p>
             Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging ${streamsAverageFormatted} streams per day. The most streams were ${streamsHighest} on ${streamsHighestDate} and the least were ${streamsLowest} on ${streamsLowestDate}.
