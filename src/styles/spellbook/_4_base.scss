@@ -10,12 +10,17 @@
 }
 
 html {
-  background: linear-gradient(33deg, #89253e, #3a6186);
+  background: linear-gradient(60deg, #89253e, #3a6186);
   color: $white;
   font-family: $fontFamily;
   font-size: $fontSize;
   line-height: $lineHeight;
   min-height: 100%;
+
+  @include respond-to($bp-m) {
+    background: linear-gradient(33deg, #89253e, #3a6186);
+  }
+
 }
 
 body {

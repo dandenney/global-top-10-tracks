@@ -187,7 +187,7 @@
           label: "Top 10 Position",
           fill: false,
           lineTension: 0.1,
-          backgroundColor: "rgba(75,192,192,0.4)",
+          backgroundColor: "rgba(255, 255, 255, 0.2)",
           borderColor: "rgba(215,112,138, 0.2)",
           borderCapStyle: 'butt',
           borderDash: [],

@@ -31,7 +31,7 @@
   background: rgba($white, 0.025);
   border: 1px solid rgba($white, 0.05);
   display: block;
-  margin: 0 auto;
+  margin: 0 auto $space-05;
   padding: $space-05;
   width: 200px;
 
@@ -48,7 +48,7 @@
 }
 
 .link-all {
-  left: $space;
+  right: $space;
   position: absolute;
   top: $space-05;
 }
