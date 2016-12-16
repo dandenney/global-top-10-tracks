@@ -36,15 +36,15 @@ $white: #fff;
 // -------------------------------------
 
 @font-face {
-  font-family: 'pt_sansregular';
-  src: url('../fonts/PTS55F-webfont.woff');
+  font-family: 'nc-reg';
+  src: url('../fonts/nc-reg-webfont.woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'pt_sansbold';
-  src: url('../fonts/PTS75F-webfont.woff');
+  font-family: 'nc-bold';
+  src: url('../fonts/nc-bold-webfont.woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -82,11 +82,11 @@ $space-4: $space * 4;
 
 // ----- Family ----- //
 
-$fontFamily: 'pt_sansregular', sans-serif;
+$fontFamily: 'nc-reg', Georgia;
 
 // Headings
 
-$heading-fontFamily: 'pt_sansbold', sans-serif;
+$heading-fontFamily: 'nc-bold', Georgia;
 
 // ----- Line Height ----- //
 
