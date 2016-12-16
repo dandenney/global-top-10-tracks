@@ -5,6 +5,10 @@
 //
 // *************************************
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   background: linear-gradient(33deg, #89253e, #3a6186);
   color: $white;

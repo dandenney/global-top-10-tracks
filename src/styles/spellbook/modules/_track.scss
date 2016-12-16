@@ -20,16 +20,25 @@
 
 .track-info {
   align-items: center;
-  display: flex;
+
+  @include respond-to($bp-m) {
+    display: flex;
+  }
+
 }
 
 .track-img {
   background: rgba($white, 0.025);
   border: 1px solid rgba($white, 0.05);
   display: block;
-  margin: 0 $space $space-05 0;
+  margin: 0 auto;
   padding: $space-05;
   width: 200px;
+
+  @include respond-to($bp-m) {
+    margin: 0 $space $space-05 0;
+  }
+
 }
 
 .track-artist {

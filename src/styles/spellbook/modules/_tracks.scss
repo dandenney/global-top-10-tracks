@@ -14,7 +14,12 @@
   display: block;
   opacity: 0.4;
   transition: opacity 0.25s ease-in-out;
-  width: 110px;
+  width: 60px;
+
+  @include respond-to($bp-l) {
+    width: 100px;
+  }
+
 }
 
 .tracks {
@@ -27,7 +32,7 @@
   background: rgba(#3a6186, .1);
   border-radius: 4px;
   box-shadow: 0 1px 4px 2px rgba(0, 0, 0, .1);
-  flex-basis: 20%;
+  flex-basis: 100%;
   margin: $space-025;
   padding: $space-05;
   position: relative;
@@ -51,6 +56,14 @@
       opacity: 1;
     }
 
+  }
+
+  @include respond-to($bp-s) {
+    flex-basis: 47.5%;
+  }
+
+  @include respond-to($bp-m) {
+    flex-basis: 30%;
   }
 
 }
