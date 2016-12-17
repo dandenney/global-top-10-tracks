@@ -204,10 +204,6 @@
         },
         {
           "positionDate": "12/16/16",
-          "positionRank": "2"
-        },
-        {
-          "positionDate": "12/16/16",
           "positionRank": "3"
         }
 			],
@@ -271,10 +267,6 @@
         {
           "streamDate": "12/15/16",
           "streamCount": "3011085"
-        },
-        {
-          "streamDate": "12/16/16",
-          "streamCount": "3463278"
         },
         {
           "streamDate": "12/16/16",
@@ -346,7 +338,11 @@
         {
           "positionDate": "12/15/16",
           "positionRank": "2"
-        }
+        },
+				{
+					"positionDate": "12/16/16",
+					"positionRank": "2"
+				}
 			],
       "trackStreams": [
         {
@@ -408,6 +404,10 @@
         {
           "streamDate": "12/15/16",
           "streamCount": "3322194"
+        },
+        {
+          "streamDate": "12/16/16",
+          "streamCount": "3463278"
         }
 			]
 		},
