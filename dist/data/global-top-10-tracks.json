@@ -1631,7 +1631,7 @@
         },
 				{
           "streamDate": "12/10/16",
-          "streamCount": "0"
+          "streamCount": null
         },
 				{
           "streamDate": "12/11/16",
