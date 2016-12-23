@@ -88,6 +88,10 @@
         {
           "positionDate": "12/21/16",
           "positionRank": "1"
+        },
+        {
+          "positionDate": "12/22/16",
+          "positionRank": "1"
         }
 			],
       "trackStreams": [
@@ -174,6 +178,10 @@
         {
           "streamDate": "12/21/16",
           "streamCount": "3987023"
+        },
+        {
+          "streamDate": "12/22/16",
+          "streamCount": "3981774"
         }
 			]
 		},
@@ -265,6 +273,10 @@
         {
           "positionDate": "12/21/16",
           "positionRank": "5"
+        },
+        {
+          "positionDate": "12/22/16",
+          "positionRank": "5"
         }
 			],
       "trackStreams": [
@@ -351,6 +363,10 @@
         {
           "streamDate": "12/21/16",
           "streamCount": "2788380"
+        },
+        {
+          "streamDate": "12/22/16",
+          "streamCount": "2760228"
         }
 			]
 		},
@@ -442,6 +458,10 @@
         {
           "positionDate": "12/21/16",
           "positionRank": "2"
+        },
+        {
+          "positionDate": "12/22/16",
+          "positionRank": "2"
         }
 			],
       "trackStreams": [
@@ -528,6 +548,10 @@
         {
           "streamDate": "12/21/16",
           "streamCount": "3336823"
+        },
+        {
+          "streamDate": "12/22/16",
+          "streamCount": "3362074"
         }
 			]
 		},
@@ -966,6 +990,10 @@
         {
           "positionDate": "12/21/16",
           "positionRank": "7"
+        },
+        {
+          "positionDate": "12/22/16",
+          "positionRank": "7"
         }
 			],
       "trackStreams": [
@@ -1052,6 +1080,10 @@
         {
           "streamDate": "12/21/16",
           "streamCount": "2682851"
+        },
+        {
+          "streamDate": "12/22/16",
+          "streamCount": "2670585"
         }
 			]
 		},
@@ -1143,6 +1175,10 @@
         {
           "positionDate": "12/21/16",
           "positionRank": "3"
+        },
+        {
+          "positionDate": "12/22/16",
+          "positionRank": "3"
         }
 			],
       "trackStreams": [
@@ -1229,6 +1265,10 @@
         {
           "streamDate": "12/21/16",
           "streamCount": "3060380"
+        },
+        {
+          "streamDate": "12/22/16",
+          "streamCount": "3082385"
         }
 			]
 		},
@@ -1320,6 +1360,10 @@
         {
           "positionDate": "12/21/16",
           "positionRank": "9"
+        },
+        {
+          "positionDate": "12/22/16",
+          "positionRank": "10"
         }
 			],
       "trackStreams": [
@@ -1406,6 +1450,10 @@
         {
           "streamDate": "12/21/16",
           "streamCount": "2512948"
+        },
+        {
+          "streamDate": "12/22/16",
+          "streamCount": "2465335"
         }
 			]
 		},
@@ -1666,6 +1714,10 @@
         {
           "positionDate": "12/21/16",
           "positionRank": "8"
+        },
+        {
+          "positionDate": "12/22/16",
+          "positionRank": "8"
         }
 			],
       "trackStreams": [
@@ -1744,6 +1796,10 @@
         {
           "streamDate": "12/21/16",
           "streamCount": "2542949"
+        },
+        {
+          "streamDate": "12/22/16",
+          "streamCount": "2527046"
         }
 			]
 		},
@@ -1850,6 +1906,10 @@
         {
           "positionDate": "12/21/16",
           "positionRank": "4"
+        },
+        {
+          "positionDate": "12/22/16",
+          "positionRank": "4"
         }
 			],
       "trackStreams": [
@@ -1868,6 +1928,27 @@
         {
           "streamDate": "12/21/16",
           "streamCount": "2900851"
+        },
+        {
+          "streamDate": "12/22/16",
+          "streamCount": "2842481"
+        }
+			]
+		},
+    {
+      "trackID": "0bYg9bo50gSsH3LtXe2SQn",
+      "trackName": "All I Want for Christmas Is You",
+			"trackArtist": "Mariah Carey",
+			"trackPositions": [
+        {
+          "positionDate": "12/22/16",
+          "positionRank": "9"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/22/16",
+          "streamCount": "2504360"
         }
 			]
 		}
