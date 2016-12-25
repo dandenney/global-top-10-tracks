@@ -1481,7 +1481,7 @@
         },
         {
           "streamDate": "12/3/16",
-          "streamCount": "0"
+          "streamCount": null
         },
         {
           "streamDate": "12/4/16",
@@ -1501,15 +1501,15 @@
         },
 				{
           "streamDate": "12/8/16",
-          "streamCount": "0"
+          "streamCount": null
         },
 				{
           "streamDate": "12/9/16",
-          "streamCount": "0"
+          "streamCount": null
         },
 				{
           "streamDate": "12/10/16",
-          "streamCount": "0"
+          "streamCount": null
         },
         {
           "streamDate": "12/11/16",
@@ -1548,8 +1548,8 @@
           "streamCount": "2431142"
         },
         {
-          "positionDate": "12/20/16",
-          "positionRank": "2469480"
+          "streamDate": "12/20/16",
+          "streamCount": "2469480"
         },
         {
           "streamDate": "12/21/16",

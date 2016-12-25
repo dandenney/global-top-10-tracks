@@ -154,15 +154,36 @@
         // Get date of highest stream count
         const streamsLowestDate = trackStreamsDates[streamsLowestIndex];
 
-        // Output track performance information
-        document.querySelector('#track-performance').innerHTML = `
-          <p class='track-performance'>
-            <span>${name}</span> has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> <span>${rankedCount}</span> times since 12/1/16, debuting at number ${rankedInitial} and reaching as high as number ${rankedHighest}.
-          </p>
-          <p>
-            Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging ${streamsAverageFormatted} streams per day. The most streams were ${streamsHighestFormatted} on ${streamsHighestDate} and the least were ${streamsLowestFormatted} on ${streamsLowestDate}.
-          </p>
-        `
+        console.log(streamsTotalFormatted);
+
+        // Check ranking count to pluralize
+        if (trackPositionsRanks.length > 1) {
+
+          // Output track performance information
+          document.querySelector('#track-performance').innerHTML = `
+            <p class='track-performance'>
+              <span>${name}</span> has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> <span>${rankedCount}</span> times since 12/1/16, debuting at number ${rankedInitial} and reaching as high as number ${rankedHighest}.
+            </p>
+            <p>
+              Those ${rankedCount} times combine for a total of ${streamsTotalFormatted} streams, averaging ${streamsAverageFormatted} streams per day. The most streams were ${streamsHighestFormatted} on ${streamsHighestDate} and the least were ${streamsLowestFormatted} on ${streamsLowestDate}.
+            </p>
+          `
+
+        } else {
+
+          // Output track performance information
+          document.querySelector('#track-performance').innerHTML = `
+            <p class='track-performance'>
+              <span>${name}</span> has been in <a href='https://spotifycharts.com/regional'>Spotify's Global Top Ten</a> <span>${rankedCount}</span> time since 12/1/16, reaching number ${rankedInitial}.
+            </p>
+            <p>
+              That ${rankedCount} time was for a total of ${streamsTotalFormatted} streams.
+            </p>
+          `
+
+        }
+
+        console.log(trackPositionsRanks.length);
 
         // Create a line chart using ranking dates and positions
         chartPosition(trackPositionsDates, trackPositionsRanks);
