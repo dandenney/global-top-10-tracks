@@ -96,6 +96,10 @@
         {
           "positionDate": "12/23/16",
           "positionRank": "1"
+        },
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "1"
         }
 			],
       "trackStreams": [
@@ -190,6 +194,10 @@
         {
           "streamDate": "12/23/16",
           "streamCount": "4019702"
+        },
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "3680079"
         }
 			]
 		},
@@ -289,6 +297,10 @@
         {
           "positionDate": "12/23/16",
           "positionRank": "5"
+        },
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "9"
         }
 			],
       "trackStreams": [
@@ -383,6 +395,10 @@
         {
           "streamDate": "12/23/16",
           "streamCount": "2808197"
+        },
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "2505637"
         }
 			]
 		},
@@ -482,6 +498,10 @@
         {
           "positionDate": "12/23/16",
           "positionRank": "1"
+        },
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "4"
         }
 			],
       "trackStreams": [
@@ -576,6 +596,10 @@
         {
           "streamDate": "12/23/16",
           "streamCount": "3403943"
+        },
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "3162927"
         }
 			]
 		},
@@ -845,6 +869,10 @@
         {
           "positionDate": "12/23/16",
           "positionRank": "6"
+        },
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "6"
         }
 			],
       "trackStreams": [
@@ -939,6 +967,10 @@
         {
           "streamDate": "12/23/16",
           "streamCount": "2778474"
+        },
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "2603076"
         }
 			]
 		},
@@ -1038,6 +1070,10 @@
         {
           "positionDate": "12/23/16",
           "positionRank": "8"
+        },
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "10"
         }
 			],
       "trackStreams": [
@@ -1132,6 +1168,10 @@
         {
           "streamDate": "12/23/16",
           "streamCount": "2649274"
+        },
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "2445520"
         }
 			]
 		},
@@ -1231,6 +1271,10 @@
         {
           "positionDate": "12/23/16",
           "positionRank": "4"
+        },
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "5"
         }
 			],
       "trackStreams": [
@@ -1325,6 +1369,10 @@
         {
           "streamDate": "12/23/16",
           "streamCount": "3123157"
+        },
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "2800714"
         }
 			]
 		},
@@ -2035,6 +2083,10 @@
         {
           "positionDate": "12/23/16",
           "positionRank": "3"
+        },
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "1"
         }
 			],
       "trackStreams": [
@@ -2045,6 +2097,61 @@
         {
           "streamDate": "12/23/16",
           "streamCount": "3186643"
+        },
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "5133837"
+        }
+			]
+		},
+    {
+      "trackID": "2FRnf9qhLbvw8fu4IBXx78",
+      "trackName": "Last Christmas",
+			"trackArtist": "Wham!",
+			"trackPositions": [
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "3"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "3543729"
+        }
+			]
+		},
+    {
+      "trackID": "5a1iz510sv2W9Dt1MvFd5R",
+      "trackName": "It's Beginning To Look A Lot Like Christmas",
+			"trackArtist": "Michael Bublé",
+			"trackPositions": [
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "7"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "2565560"
+        }
+			]
+		},
+    {
+      "trackID": "5hslUAKq9I9CG2bAulFkHN",
+      "trackName": "It's the Most Wonderful Time of the Year",
+			"trackArtist": "Andy Williams",
+			"trackPositions": [
+        {
+          "positionDate": "12/24/16",
+          "positionRank": "8"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/24/16",
+          "streamCount": "2511051"
         }
 			]
 		}
