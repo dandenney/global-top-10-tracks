@@ -100,6 +100,10 @@
         {
           "positionDate": "12/24/16",
           "positionRank": "2"
+        },
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "2"
         }
 			],
       "trackStreams": [
@@ -198,6 +202,10 @@
         {
           "streamDate": "12/24/16",
           "streamCount": "3680079"
+        },
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "3009856"
         }
 			]
 		},
@@ -301,6 +309,10 @@
         {
           "positionDate": "12/24/16",
           "positionRank": "9"
+        },
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "10"
         }
 			],
       "trackStreams": [
@@ -399,6 +411,10 @@
         {
           "streamDate": "12/24/16",
           "streamCount": "2505637"
+        },
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "2086073"
         }
 			]
 		},
@@ -502,6 +518,10 @@
         {
           "positionDate": "12/24/16",
           "positionRank": "4"
+        },
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "4"
         }
 			],
       "trackStreams": [
@@ -600,6 +620,10 @@
         {
           "streamDate": "12/24/16",
           "streamCount": "3162927"
+        },
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "2603786"
         }
 			]
 		},
@@ -873,6 +897,10 @@
         {
           "positionDate": "12/24/16",
           "positionRank": "6"
+        },
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "9"
         }
 			],
       "trackStreams": [
@@ -971,6 +999,10 @@
         {
           "streamDate": "12/24/16",
           "streamCount": "2603076"
+        },
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "2134038"
         }
 			]
 		},
@@ -1275,6 +1307,10 @@
         {
           "positionDate": "12/24/16",
           "positionRank": "5"
+        },
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "6"
         }
 			],
       "trackStreams": [
@@ -1373,6 +1409,10 @@
         {
           "streamDate": "12/24/16",
           "streamCount": "2800714"
+        },
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "2389365"
         }
 			]
 		},
@@ -2087,6 +2127,10 @@
         {
           "positionDate": "12/24/16",
           "positionRank": "1"
+        },
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "1"
         }
 			],
       "trackStreams": [
@@ -2101,6 +2145,10 @@
         {
           "streamDate": "12/24/16",
           "streamCount": "5133837"
+        },
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "3832544"
         }
 			]
 		},
@@ -2112,12 +2160,20 @@
         {
           "positionDate": "12/24/16",
           "positionRank": "3"
+        },
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "3"
         }
 			],
       "trackStreams": [
         {
           "streamDate": "12/24/16",
           "streamCount": "3543729"
+        },
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "2663300"
         }
 			]
 		},
@@ -2129,12 +2185,20 @@
         {
           "positionDate": "12/24/16",
           "positionRank": "7"
+        },
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "7"
         }
 			],
       "trackStreams": [
         {
           "streamDate": "12/24/16",
           "streamCount": "2565560"
+        },
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "2252705"
         }
 			]
 		},
@@ -2146,12 +2210,37 @@
         {
           "positionDate": "12/24/16",
           "positionRank": "8"
+        },
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "1"
         }
 			],
       "trackStreams": [
         {
           "streamDate": "12/24/16",
           "streamCount": "2511051"
+        },
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "2360811"
+        }
+			]
+		},
+    {
+      "trackID": "74u8cWJGP8d8xsdD0pFoWg",
+      "trackName": "Jingle Bell Rock",
+			"trackArtist": "Bobby Helms",
+			"trackPositions": [
+        {
+          "positionDate": "12/25/16",
+          "positionRank": "5"
+        }
+			],
+      "trackStreams": [
+        {
+          "streamDate": "12/25/16",
+          "streamCount": "2535692"
         }
 			]
 		}
